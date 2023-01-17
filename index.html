@@ -2,11 +2,12 @@
 <html lang="en"> 
   <head>
     <meta charset="utf-8">
-    <title>Client</title>
-    <meta name="description" lang="en" content="">
+    <title>Weather API Template</title>
+    <meta name="description" lang="en" content="Home Page of Weather API Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="icons8-star-16.png" />
     <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="assets/css/style.css" >
   </head>
   <body>
@@ -14,17 +15,284 @@
     <div class="container">
       <!--header section start-->
       <header>
+        <div class="wrapper">
+          <div class="mobile-nav">
+            <div class="logo-container">
+              <div class="logo">
+                <figure><a href="index.html" title="Logo"><img src="./assets/images/logo@2x.png" alt="Logo"></a></figure>
+              </div>
+              <div class="header-text">
+                <h1 class="capital">company name</h1>
+                <p>tagline goes here</p>
+              </div>
+            </div>
+            <div class="hamburger-toggle">
+              <span class="hamburger"></span>
+            </div>
+          </div>
+          <nav>
+            <ul class="nav-menu hide">
+              <li class="active"><a href="index.html" title="Home" class="nav-link capital">home</a></li>
+              <li><a href="#FIXME" title="News" class="nav-link capital">news</a></li>
+              <li><a href="#FIXME" title="Live cameras" class="nav-link capital">live cameras</a></li>
+              <li><a href="photo.html" title="Photos" class="nav-link capital">photos</a></li>
+              <li><a href="#FIXME" title="Contact" class="nav-link capital">contact</a></li>
+            </ul>
+          </nav>   
+        </div>
       </header>
-      <!--header section ends-->
+      <!--header section end-->
       <!--main section start-->
       <main>
+        <!--banner section start-->
+        <div class="banner-section">
+          <div class="wrapper">
+            <form action="#FIXME" method="post" class="location-form">
+              <div class="location">
+                <input type="text" name="location" placeholder="Find your location..." class="capital" autocomplete="off">
+              </div>
+              <div class="find">
+                <button type="button" value="find">find</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--banner section end-->
+
+        <!--weather section start-->
+        <section class="weather-section">
+          <div class="wrapper">
+            <div class="weather-header">
+              <span class="capital">monday</span>
+              <span>6 oct</span>
+            </div>
+            <div class="info-container">
+              <h3>new york</h3>
+              <div class="temperature">
+                <h2>23&#8451;</h2>
+                <figure><img src="./assets/images/icons/icon-1.svg" alt="Temperature indicator image"></figure>
+              </div>
+              <ul class="weather-info">
+                <li>
+                  <figure><img src="./assets/images/icon-umberella@2x.png" alt="Umberella image"></figure>
+                  <span>20%</span>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/icon-wind@2x.png" alt="Wind image"></figure>
+                  <span>18m/sec</span>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/icon-compass@2x.png" alt="Compass image"></figure>
+                  <span>east</span>
+                </li>
+              </ul>
+            </div>
+            <div class="error-message hide">
+              <h2>Please Enter Valid City Name</h2>
+            </div>
+          </div>
+        </section>
+        <!--weather section end-->
+
+        <!--live-cameras section start-->
+        <section class="live-cameras-section">
+          <div class="wrapper">
+            <h2 class="capital">live cameras</h2>
+            <ul class="cities">
+              <li>
+                <div class="img-container">
+                  <div class="live-image">
+                    <img src="./assets/images/live-camera-1@2x.jpg" alt="Live cameras image 1"> 
+                  </div>
+                  <div class="play-image">
+                    <img src="./assets/images/play-button@2x.png" alt="Play button image">
+                  </div>
+                </div>
+                <h3>new york</h3>
+                <span>8 oct, 8.00AM</span>
+              </li>
+              <li>
+                <div class="img-container">
+                  <div class="live-image">
+                    <img src="./assets/images/live-camera-2@2x.jpg" alt="Live cameras image2"> 
+                  </div>
+                  <div class="play-image">
+                    <img src="./assets/images/play-button@2x.png" alt="Play button image">
+                  </div>
+                </div>
+                <h3>los angeles</h3>
+                <span>8 oct, 8.00AM</span>
+              </li>
+              <li>
+                <div class="img-container">
+                  <div class="live-image">
+                    <img src="./assets/images/live-camera-3@2x.jpg" alt="Live cameras image3"> 
+                  </div>
+                  <div class="play-image">
+                    <img src="./assets/images/play-button@2x.png" alt="Play button image">
+                  </div>
+                </div>
+                <h3>Chicago</h3>
+                <span>8 oct, 8.00AM</span>
+              </li>
+              <li>
+                <div class="img-container">
+                  <div class="live-image">
+                    <img src="./assets/images/live-camera-4@2x.jpg" alt="Live cameras image4"> 
+                  </div>
+                  <div class="play-image">
+                    <img src="./assets/images/play-button@2x.png" alt="Play button image">
+                  </div>
+                </div>
+                <h3>london</h3>
+                <span>8 oct, 8.00AM</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--live-cameras section end-->
+
+        <!--dolor section start-->
+        <section class="dolor-section">
+          <div class="wrapper">
+            <ul class="dolor">
+              <li>
+                <span>06.10</span>
+                <div class="info">
+                  <h4 class="capital">doloremque laudantium totam sequi</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                </div>
+              </li>
+              <li>
+                <span>06.10</span>
+                <div class="info">
+                  <h4 class="capital">doloremque laudantium totam sequi</h4>
+                  <p>Nobis architecto consequatur ab, ea, eum autem aperiam accusantium placeat vitae facere explicabo temporibus minus distinctio cum optio quis, dignissimos eius aspernatur fuga. Praesentium totam, corrupti beatae amet expedita veritatis.</p>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                </div>
+              </li>
+              <li>
+                <span>06.10</span>
+                <div class="info">
+                  <h4 class="capital">doloremque laudantium totam sequi</h4>
+                  <p>Enim impedit officiis placeat qui recusandae doloremque possimus, iusto blanditiis, quam optio delectus maiores. Possimus rerum, velit cum natus eos. Cumque pariatur beatae asperiores, esse libero quas ad dolorem. Voluptates.</p>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--dolor section end-->
+
+        <!--feature section start-->
+        <section class="feature-section">
+          <div class="wrapper">
+            <div class="application-container">
+              <h2 class="capital">application features</h2>
+              <ul class="application">
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <div class="text-container">
+                    <h4 class="capital">natus error sit voluptatem accusantium</h4>
+                    <p class="capital">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                  </div>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <div class="text-container">
+                    <h4 class="capital">natus error sit voluptatem accusantium</h4>
+                    <p class="capital">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                  </div>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <div class="text-container">
+                    <h4 class="capital">natus error sit voluptatem accusantium</h4>
+                    <p class="capital">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="weather-container">
+              <h2 class="capital">weather analyssis</h2>
+              <ul class="weather">
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">accusantium doloremque laudantium rem aperiam</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">eaque ipsa quae ab illo inventore veritatis quasi</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">architecto beatae vitae dicta sunt explicabo</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">nemo enim ipsam voluptatem quia voluptas</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">aspernatur aut odit aut fugit, sed quia consequuntur</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">magni dolores eos qui ratione voluptatem sequi</p>
+                </li>
+                <li>
+                  <figure><img src="./assets/images/arrow@2x.png" alt="Arrow image"></figure>
+                  <p class="capital">neque porro quisquam est qui dolorem ipsum quia</p>
+                </li>
+              </ul>
+            </div>
+            <div class="awesome-container">
+              <h2 class="capital">awesome photos</h2>
+              <ul class="awesome">
+                <li><img src="./assets/images/thumb-1@2x.jpg" alt="Thumb image1"></li>
+                <li><img src="./assets/images/thumb-2@2x.jpg" alt="Thumb image2"></li>
+                <li><img src="./assets/images/thumb-3@2x.jpg" alt="Thumb image3"></li>
+                <li><img src="./assets/images/thumb-4@2x.jpg" alt="Thumb image4"></li>
+                <li><img src="./assets/images/thumb-5@2x.jpg" alt="Thumb image5"></li>
+                <li><img src="./assets/images/thumb-6@2x.jpg" alt="Thumb image6"></li>
+                <li><img src="./assets/images/thumb-7@2x.jpg" alt="Thumb image7"></li>
+                <li><img src="./assets/images/thumb-8@2x.jpg" alt="Thumb image8"></li>
+                <li><img src="./assets/images/thumb-9@2x.jpg" alt="Thumb image9"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--feature section end-->
+
       </main>
       <!--main section end-->
       <!--footer section start-->
-      <footer>      
+      <footer>     
+         <div class="wrapper">
+          <div class="footer-top">
+            <form action="#FIXME" method="post" class="subscribe-form">
+              <div class="email">
+                <input type="email" name="email" placeholder="Enter your email to subscribe..." autocomplete="off">
+              </div>
+              <div class="subscribe">
+                <button type="submit" value="subscribe">subscribe</button>
+              </div>
+            </form>
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/login/" title="Facebook" target="_blank" rel="noopener" class="icon facebook">facebook</a></li>
+              <li><a href="https://twitter.com/i/flow/login" title="Twitter" target="_blank" rel="noopener" class="icon twitter">twitter</a></li>
+              <li><a href="https://myaccount.google.com/" title="Google plus" target="_blank" rel="noopener" class="icon google">google</a></li>
+              <li><a href="https://in.pinterest.com/login/" title="pinterest" target="_blank" rel="noopener" class="icon pinterest">pinterest</a></li>
+            </ul>
+          </div>
+          <p>Copyright 2023. Designed by Ruby. All rights reserved</p>
+         </div>
       </footer>
       <!--footer section end-->
     </div>
     <!--container end-->
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
